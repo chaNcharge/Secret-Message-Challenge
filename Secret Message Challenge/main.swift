@@ -8,5 +8,16 @@
 
 import Foundation
 
-print("Hello, World!")
+let alphabet = "abcdefghijklmnopqrstuvwxyz"
+var newMessage = ""
 
+print("Encrypt or decrypt?")
+let choice = readLine()!
+if choice == "encrypt" {
+    print("Please enter a message to encrypt")
+} else if choice == "decrypt" {
+    print("Please enter a message to decrypt")
+}
+
+let message = readLine()!
+print(message)
